@@ -2,15 +2,25 @@
   "name": "tienda_sm_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node --watch app.js",
+    "start": "nodemon --watch server.js,*.js --exec 'node server.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "restapi"
+  ],
+  "author": "alita",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.3"
   }
 }
